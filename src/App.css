@@ -39,7 +39,6 @@
 
 .pagination {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #dddddd;
@@ -81,7 +80,7 @@ display: inline-block;
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
-  height: 565px;
+  height: 530px;
   justify-content: space-around;
 }
 
@@ -91,7 +90,7 @@ display: inline-block;
   width: 21%;
   margin-bottom: 1%;
   padding: 1em;
-  height: 15rem;
+  height: 14rem;
 }
 .text-primary{
   padding-left: 2em;
