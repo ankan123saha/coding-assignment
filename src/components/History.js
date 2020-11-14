@@ -7,15 +7,12 @@ import  HistoryPost from './HistoryPost'
 
 const History = () => {
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const [historyPerPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(0);
 
   const history = useSelector(state => state.history.history)
 
 
-  const indexOfLastHistory = currentPage * historyPerPage;
-  const indexOfFirstHistory = indexOfLastHistory - historyPerPage;
-  const currentHistory = history.slice(indexOfFirstHistory, indexOfLastHistory);
+  const currentHistory = history[currentPage]
 
   const paginate = pageNumber => setCurrentPage(pageNumber);
   const next= () =>{
@@ -25,7 +22,7 @@ const History = () => {
   } 
 
   const last= () =>{
-    if(currentPage>-1){
+    if(currentPage>0){
       paginate(currentPage-1)
     }
 } 
@@ -33,10 +30,10 @@ const History = () => {
   return (
     <div className='container mt-5'>
       <h1 className='text-primary'>History</h1>
-      <HistoryPost history={currentHistory[0]}/>
+      <HistoryPost history={currentHistory}/>
       <section className="history-buttons-container">
-      <button className="history-buttons" onClick={last}>Previous</button>
-      <button className="history-buttons" onClick={next}>Next</button>
+      {currentPage>0?<button className="history-buttons" onClick={last}>Previous</button>:""}
+      {currentPage<history.length-1?<button className="history-buttons" onClick={next}>Next</button>:""}
       </section> 
 
 
