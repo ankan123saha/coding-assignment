@@ -32,8 +32,8 @@ const History = () => {
       <h1 className='text-primary'>History</h1>
       <HistoryPost history={currentHistory}/>
       <section className="history-buttons-container">
-      {currentPage>0?<button className="history-buttons" onClick={last}>Previous</button>:""}
-      {currentPage<history.length-1?<button className="history-buttons" onClick={next}>Next</button>:""}
+      <button disabled={(currentPage==0)} className="history-buttons" onClick={last}>Previous</button>
+      <button disabled={(currentPage==history.length-1)} className="history-buttons" onClick={next}>Next</button>
       </section> 
 
 
