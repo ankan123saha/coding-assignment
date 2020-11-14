@@ -6,8 +6,8 @@ const Menu = () => {
   return (
     <nav>
       <ul className='menu'>
-          <li><NavLink className="nav-item" to="/">Payloads</NavLink></li>
-          <li><NavLink className="nav-item" to="/history">History</NavLink></li>
+          <li><NavLink className="nav-item" exact={true} to="/">Payloads</NavLink></li>
+          <li><NavLink className="nav-item" exact={true} to="/history">History</NavLink></li>
         </ul>
     </nav>
   );
