@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.orbit-params{
+  padding-left: 1em;
+  margin: 0;
+  font-size: 0.90rem;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page-item {
+  float: left;
+}
+
+.page-item a {
+  display: block;
+  padding: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.nav-item{
+text-decoration: none;
+padding: 1em;
+display: inline-block;
+}
+
+.menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0 3em;
+  overflow: hidden;
+  background-color: #dddddd;
+  display: flex;
+}
+.active{
+  font-weight: bold;
+}
+
+.list-group{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  height: 565px;
+  justify-content: space-around;
+}
+
+.list-group-item{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 21%;
+  margin-bottom: 1%;
+  padding: 1em;
+  height: 15rem;
+}
+.text-primary{
+  padding-left: 2em;
+}
+.list-group-item:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.history-post{
+  width: 60%;
+  margin: auto;
+  height: 35rem;
+}
+.history-post-header{
+  text-align: center;
+  font-weight: bold;
+}
+
+.text-center{
+  text-align: center;
+}
+.display-none{
+  display: none;
+}
+
+.text-wrap{
+  white-space: nowrap;
+}
+
+.history-buttons{
+ display: inline-block;
+ padding: 0.5em;
+ margin: 0 0.5em;
+ width: 5rem;
+}
+.history-buttons-container{
+display: flex;
+justify-content: center;
+}
