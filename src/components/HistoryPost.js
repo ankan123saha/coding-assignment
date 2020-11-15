@@ -9,7 +9,7 @@ const HistoryPost = ({ history }) => {
         {(history && history.flight_number)?<div className="text-center"><b>Flight Number: </b>{history.flight_number}</div>:""}
         <p className="text-center">{history?history.details:""}</p>
         {history?<div>
-       {Object.keys(history.links).map(key=><div className={(history.links[key] && history.links[key].length>0)?"text-wrap text-center":"display-none"}>{key}: <a target="_blank" href={history.links[key]}>{history.links[key]}</a></div>)}
+       {Object.keys(history.links).map(key=><div className={(history.links[key] && history.links[key].length>0)?"text-wrap text-center":"display-none"}><a className="reading-link" target="_blank" href={history.links[key]}>Read {key}</a></div>)}
         </div>:""}
     </article>
   );
