@@ -85,19 +85,19 @@ color: #ffffff;
 }
 
 .list-group{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1em;
   width: 90%;
   margin: auto;
   height: 530px;
-  justify-content: space-around;
 }
 
 .list-group-item{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 21%;
-  margin-bottom: 1%;
+  border-radius: 5px;
   padding: 1em;
   height: 14rem;
 }
