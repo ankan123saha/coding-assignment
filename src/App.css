@@ -70,13 +70,14 @@ color: #ffffff;
 
 .reading-link{
   text-decoration: none;
+  color: inherit;
 }
 .menu{
   list-style-type: none;
   margin: 0;
   padding: 0 3em;
   overflow: hidden;
-  background-color: #424242;
+  background: #36454F;
   display: flex;
 }
 .active{
